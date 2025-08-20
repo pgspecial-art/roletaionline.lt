@@ -28,7 +28,7 @@
     <main>
         <div class="intro">
             <p>
-                Mes – <b>RoletaiOnline</b> – jūsų patikimas partneris langų uždengimų srityje! Pardavinėjame ir montuojame stilingus roletus, diena-naktis roletus, tinklelius nuo vabzdžių, žaliuzes ir kitus sprendimus jūsų namams ar biurui. Montuojame Jonavoje ir Kaune, o užsakymus siunčiame visoje Lietuvoje.
+                Mes – <b>RoletaiOnline</b> – jūsų patikimas partneris langų uždengimų srityje! Pardavinėjame ir montuojame stilingus roletus, diena-naktis roletus, tinklelius nuo vabzdžių, žaliuzes ir kitus sprendimus jūsų namams ar biurui. Montuojame Jonavoje ir Kaune, o užsakymus siunčiame visoje Lietuvoje. O Gabija tai turės darbo sutvarkyt saitą kaip programavimo GURU.
             </p>
         </div>
         <section>
