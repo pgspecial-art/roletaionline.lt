@@ -64,8 +64,7 @@
             <h2>Konsultacija ir užsakymas</h2>
             <p>Norite pasikonsultuoti, užsakyti matavimą ar užduoti klausimų? Susisiekite:</p>
             <p>
-                <a href="mailto:info@roletaionline.lt">info@roletaionline.lt</a> <br>
-                arba mūsų <a href="https://www.facebook.com/roletai.jonava.7" target="_blank">Facebook puslapyje Roletai Jonava</a>
+                <a href="https://www.facebook.com/roletai.jonava.7" target="_blank">Facebook puslapyje Roletai Jonava</a>
             </p>
         </section>
     </main>
