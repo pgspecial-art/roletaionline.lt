@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>RoletaiOnline.lt – Langų uždengimai ir montavimas</title>
-    <meta name="description" content="RoletaiOnline – stilingi langų uždengimai, roletai, diena-naktis, tinkleliai nuo vabzdžių, žaliuzės. Montuojame Jonavoje, Kaune. Siunčiame visoje Lietuvoje.">
+    <meta name="description" content="RoletaiOnline – stilingi langų uždengimai, roletai, diena-naktis, tinkleliai nuo vabzdžių, žaliuzės. Montuojame Jonavoje, Kaune. Siunčiame visoje Lietuvoje. Susisiekite dėl kainos dabar href="https://www.facebook.com/roletai.jonava.7">
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; background: #f6f8fb; margin: 0; color: #222; }
         header { background: #4589ff; color: #fff; padding: 28px 0; text-align: center; }
