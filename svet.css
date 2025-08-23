@@ -1,1 +1,353 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.general-section {
+    padding: 100px 0;
+}
+
+.general-section .container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.general-section .title-part {
+    text-align: center;
+    margin-bottom: 71px;
+}
+
+.general-section .title-part h2 {
+    color: #222;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.general-section .title-part .red-row {
+    background: #EB5757;
+    width: 31px;
+    height: 5px;
+    margin: 19px auto;
+}
+
+.general-section .title-part p {
+    font-size: 20px;
+    color: #222;
+    margin: 0;
+}
+
+/*===============================
+NAVIGATION
+===================== */
+
+nav a {
+    text-decoration: none;
+    color: #222;
+}
+
+nav h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 47px 72px;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 63px;
+}
+
+nav ul .active a,
+nav a:hover{
+    color: #EB5757;
+}
+
+/*===============================
+HEADER
+===================== */
+
+header {
+    height: calc(100vh - 120px);
+    background: url('img/header.jpg') center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .content {
+    width: 100%;
+    max-width: 1000px;
+}
+
+header h1 {
+    font-size: 80px;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header p {
+    font-size: 40px;
+    color: white;
+    margin: 16px 0 43px;
+}
+
+header .buttons a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 15px 66px;
+    display: inline-block;
+}
+
+header .buttons .primary-button {
+    color: white;
+    background: #EB5757;
+    margin-right: 21px;
+}
+
+header .buttons .secondary-button {
+    color:#EB5757;
+    background: white;
+}
+
+/*===============================
+CITATION
+===================== */
+
+.citation {
+    background: #EB5757;
+    padding: 39px 0;
+}
+
+.citation p {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/*===============================
+ARTISTS SECTION
+===================== */
+.artists-section {
+    background: #f8f8f8;
+}
+
+.artists-section .content-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artists-section .content-part .artist-block {
+    width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 28px 40px;
+}
+
+.artists-section .content-part .artist-block .image img {
+    width: 238px;
+    height: 238px;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+/*===============================
+GALLERY SECTION
+===================== */
+.gallery-section {
+    background:#fee9e9;
+    padding: 20px;
+}
+
+.gallery-section .content-part {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-section .content-part img {
+    width: 20vh;  
+    height: 20vh; 
+    object-fit: cover; 
+    border: none;
+    display: block;
+}
+
+/*===============================
+TICKET SECTION
+===================== */
+
+.tickets-section, .location-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tickets-section h2, .location-section h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.tickets-section p, .location-section p {
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.tickets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.ticket {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.ticket h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.ticket p {
+    font-size: 16px;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #d9534f;
+}
+
+.ticket button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ticket button:hover {
+    background-color: #c9302c;
+}
+
+/*===============================
+MAP SECTION
+===================== */
+.location-section {
+    background:#fee9e9;
+}
+
+
+.map {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-section {
+    background:#fee9e9;
+    padding: 20px;
+}
+
+.gallery-section .content-part {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(3, 1fr);    
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-section .content-part img {
+    width: 20vh;  
+    height: 20vh; 
+    object-fit: cover; 
+    border: none;
+    display: block;
+}
+
+
+/*===============================
+FOOTER
+===================== */
+
+footer {
+    background-color: white;
+    padding: 10px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-left {
+    text-align: left;
+    color: #333;
+  }
+  
+  .footer-right {
+    text-align: right;
+    color: #333;
+  }
+  
 
