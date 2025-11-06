@@ -1,123 +1,163 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700display=swap");
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins , sans-serif";
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background: #f2f2f2;
-}
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(168, 163, 157);
-    z-index: 100;
-}
-.flex{
-    display: flex;
-    align-items: center;
-}
-.container{
- max-width: 1200px;
- width: 100%;
- margin: 0 auto;
- padding: 0 20px;
-}
-.navbar{  
-    justify-content: space-between;
-}
-.nav-links{
-gap: 25px;
-list-style:none ;
-}
-.navbar a{
-    padding: 20px 0;
-    display: inline-block;
-color: rgb(255, 255, 255);
-text-decoration: none;
-text-transform: capitalize;
-transition: 0.2s;
-}
-.navbar a:hover{
-    color: rgb(206, 205, 205);
-    background-color: rgb(168, 163, 157);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-
-
-.homepage{
-    position:relative;
-    height: 100vh;
-    width: 100%;
-    background: url(https://completeblinds.net.au/wp-content/uploads/2014/04/smart-privacy-1-scaled-1.png);
-    background-position: center;
-    background-size: cover;
-}
-.homepage::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.2);
-}
-.homepage .content{
-    position: relative;
-    height: 85%;
-    flex-direction: column;
-    justify-content: center;
-}
-.homepage .text{
-   color: #fff; 
-   text-align: center;
-   margin-bottom: 50px ;
-}
-.homepage .text h1{
-    font-size: 90px;
-    font-weight: 750px;
-    margin-bottom: 10px;
-}
-.homepage a{
-    color: #333;
-    text-decoration: none;
-    background: #fff ;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    box-shadow: rgba(0, 0, 0, 0.3);
-    font-size: 18px;
-    transition: 0.3s;
-}
-.homepage a:hover{
-  color:#fff ;
-  background:rgba(225,255,255,0.3)
-
+html {
+  scroll-behavior: smooth;
 }
 
-
-section{
-    padding-top: 80px;
+body {
+  background: #f2f2f2;
 }
 
-.section-title{
-    text-align: center;
+/* ---------- HEADER & NAV ---------- */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(168, 163, 157);
+  z-index: 100;
 }
-section h2{
-    font-size: 2rem;
+
+.flex {
+  display: flex;
+  align-items: center;
 }
-section .cards{
-    margin-top: 50px ;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-section .card{
-  width: calc(100% / 3 - 30px) ; 
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Facebook icon replacing the logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  padding: 20px 0;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: rgb(206, 205, 205);
+  background-color: rgb(168, 163, 157);
+}
+
+/* ---------- HOMEPAGE ---------- */
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("https://completeblinds.net.au/wp-content/uploads/2014/04/smart-privacy-1-scaled-1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.homepage::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.homepage .content {
+  position: relative;
+  height: 85%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homepage .text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homepage .text h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.homepage a {
+  color: #333;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.homepage a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+  padding-top: 80px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section .cards {
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section .card {
+  width: calc(100% / 3 - 30px);
   text-align: center;
   list-style: none;
   background-color: #fff;
@@ -125,161 +165,188 @@ section .card{
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
   margin-bottom: 40px;
+  transition: transform 0.3s ease;
 }
 
-section .card img{
-height: 120px;
-width: 120px;
-border-radius: 50%;
-margin-bottom: 20px;
-}
-section .card p{
-    margin-top: 5px;
+section .card:hover {
+  transform: translateY(-5px);
 }
 
-
-.portfolio .card{
-    padding: 0 0 20px;
-}
-.portfolio .card img{
-    height: 250px;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
+section .card img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
-
-.about .company-info{
-margin-top: 30px;
-
-}
-.about .row{
-    padding: 10px 20px;
-}
-.about h3{
-    margin: 30px 0 10px;
+section .card p {
+  margin-top: 5px;
 }
 
+/* ---------- PORTFOLIO ---------- */
 
-
-.contact .row{
-    justify-content: space-between;
-margin: 60px 0 90px;
-padding-right: 40px;
-
-}
-.contact .row .col{
-    padding: 0 20px ;
-    width: calc(100%/ 2- 50px);
-
-}
-.contact .row .col p{
-    size: 50px;
-    color: #4a4a4a ;
-    margin-bottom:30px ;
-}
-.contact .row .col p i{
-margin-right: 30px;
-
+.portfolio .card {
+  padding: 0 0 20px;
 }
 
-.contact form input{
- width: 90%;
- height: 40px;
- margin-bottom: 20px;
- padding: 0 20px;
- border: 1px solid #bfbfbf;
- outline: none;
-}
-.contact form textarea{
- padding: 15px;
-width: 90%;
-height: 150px;
-border: 1px solid #bfbfbf;
-outline: none;
-resize: none
-}
-.contact form button{
-    padding: 15px 20px ;
-    border-radius: 8px ;
-    font-size: 18px;
-    color: #fff;
-    color: #515151;
-    border: none;
-    background: #6b6b6b;
-    cursor: pointer;
-    transition: 0,2s;
+.portfolio .card img {
+  height: 250px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
 }
 
-.contact form button:hover{
-    background: #656565;
-    color: #333;
+/* ---------- ABOUT ---------- */
+
+.about .company-info {
+  margin-top: 30px;
 }
 
-
-
-
-.footer{
-    background: #333;
-    padding: 20px 0;
+.about .row {
+  padding: 10px 20px;
 }
-.footer span{
-    color: #fff;
+
+.about h3 {
+  margin: 30px 0 10px;
 }
-#menu-toggler #hamburger-btn{
-    display: none;
+
+/* ---------- CONTACT ---------- */
+
+.contact .row {
+  justify-content: space-between;
+  margin: 60px 0 90px;
+  padding-right: 40px;
 }
- 
-@media (width < 860px) {
-   
-.navbar .nav-links {
+
+.contact .row .col {
+  padding: 0 20px;
+  width: calc(100% / 2 - 50px);
+}
+
+.contact .row .col p {
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.contact .row .col p i {
+  margin-right: 30px;
+}
+
+.contact form input {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  border: 1px solid #bfbfbf;
+  outline: none;
+}
+
+.contact form textarea {
+  padding: 15px;
+  width: 90%;
+  height: 150px;
+  border: 1px solid #bfbfbf;
+  outline: none;
+  resize: none;
+}
+
+.contact form button {
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  border: none;
+  background: #6b6b6b;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact form button:hover {
+  background: #515151;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  background: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer span {
+  color: #fff;
+}
+
+/* ---------- MENU TOGGLER ---------- */
+
+#menu-toggler,
+#hamburger-btn {
+  display: none;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 860px) {
+  .navbar .nav-links {
     position: fixed;
-    left: 0;
     top: 65px;
-    height: 350px;
-    display: block;
-    background: #333;
-    width: 300px;
-    padding-left:20px ;
-    padding-top: 30px;
     left: -100%;
-    transition:  all 0.5s ease-in-out;
-}
-#menu-toggler:checked ~ .nav-links{
- left: 0;
-}
-.nav-links li{
-    font-size: 18px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    display: block;
+    padding-top: 30px;
+    transition: all 0.5s ease;
+  }
 
-}
-#menu-toggler{
+  #menu-toggler:checked ~ .nav-links {
+    left: 0;
+  }
+
+  .nav-links li {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  #menu-toggler {
+    display: none;
+  }
+
+  #hamburger-btn {
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size: 28px;
     cursor: pointer;
+  }
 
-}
- section .cards .card{
-    width: calc(100%/ 2 - 15px);
- }
- .contact .row {
+  section .cards .card {
+    width: calc(100% / 2 - 15px);
+  }
+
+  .contact .row {
     flex-direction: column;
- }
- .contact .row .col{
+  }
+
+  .contact .row .col {
     width: 100%;
- }
- .contact .row .col:last-child{
+  }
+
+  .contact .row .col:last-child {
     margin-top: 80px;
- }
-}
-@media(width < 560px) {
-    section .cards .card{
-        width: 100%;
-    }
-    .homepage .text h1{
-        font-size: 30px;
-    }
-    section h2{
-        font-size: 1.5rem;
-    }
+  }
 }
 
+@media (max-width: 560px) {
+  section .cards .card {
+    width: 100%;
+  }
+
+  .homepage .text h1 {
+    font-size: 40px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
