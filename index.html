@@ -56,9 +56,7 @@
       <li class="card">
         <img src="nuotraukos/roletas34.png" alt="serviceimg">
         <h3>Roletai diena-naktis</h3>
-        <p>Populiarus gaminys naudojamas kasdienybėje dėl patogumo ir galimybės kontroliuoti sklindančią šviesą pagal savo norus.
-          
-        </p>
+        <p>Naudojami kasdienybėje dėl patogumo ir galimybės kontroliuoti sklindančią šviesą pagal savo norus. Gaminiai puikiai atstoja dienines ir naktines užuolaidas.</p>
       </li>
       <li class="card">
         <img src="nuotraukos/roletas27.png" alt="serviceimg">
@@ -83,9 +81,7 @@
       <li class="card">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThqSSTJ-1qCY1nJsRUU_1aznBcyOLUYQn1gt5XD15ZWg&s" alt="serviceimg">
         <h3>Kiti</h3>
-        <p>Neradote ko norite? Dėl kilusių klausimų ar kitų išskirtinių idėjų kreipkitės mums asmenine žinute.
-        
-        </p>
+        <p>Neradote ko norite? Dėl kilusių klausimų ar kitų išskirtinių idėjų rašykite mums.</p>
       </li>
     </ul>
   </div>
@@ -139,23 +135,25 @@
   <div class="container">
     <div class="section-title">
       <h2>Susisiekite</h2>
+      <p>Turite klausimų ar pasiūlymų? Parašykite mums ir mes su jumis susisieksime!</p>
     </div>
-    <p><i class="fas fa-envelope"></i> Elektroninis paštas: roletai@outlook.com</p>
-    <p><i class="fas fa-phone"></i> Messenger: Roletai jonava</p>
 
-    <form action="https://formspree.io/f/xnqeyqlp" method="POST">
-      <label>
-        Elektroninis paštas:
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        Rašykite čia:
-        <textarea name="message" required></textarea>
-      </label>
-      <button type="submit">Siųsti</button>
+    <form action="https://formspree.io/f/xnqeyqlp" method="POST" class="contact-form">
+      <div class="form-group">
+        <input type="email" name="email" id="email" required>
+        <label for="email">Elektroninis paštas</label>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" id="message" required></textarea>
+        <label for="message">Jūsų žinutė</label>
+      </div>
+
+      <button type="submit" class="send-btn">Siųsti</button>
     </form>
   </div>
 </section>
+
 
 <footer class="footer">
   <div class="container">
