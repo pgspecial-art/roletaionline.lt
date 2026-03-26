@@ -8,10 +8,10 @@
   <meta name="description" content="Kokybiški roletai ir žaliuzės">
 
   <!-- FONTAI -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="svet.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -24,9 +24,9 @@
 
     <div class="nav-links">
       <a href="#services">Gaminiai</a>
-      <a href="#gallery">Galerija</a>
-      <a href="#about">Apie</a>
-      <a href="#contact">Kontaktai</a>
+      <a href="#gallery">Atlikti darbai</a>
+      <a href="#about">Apie mus</a>
+      <a href="#contact">Susisiekite</a>
     </div>
 
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
@@ -34,9 +34,9 @@
 
   <div class="nav-mobile" id="mobile-menu">
     <a href="#services">Gaminiai</a>
-    <a href="#gallery">Galerija</a>
-    <a href="#about">Apie</a>
-    <a href="#contact">Kontaktai</a>
+    <a href="#gallery">Atlikti darbai</a>
+    <a href="#about">Apie mus</a>
+    <a href="#contact">Susisiekite</a>
   </div>
 </nav>
 
@@ -56,33 +56,78 @@
 <section class="section" id="services">
   <div class="container">
     <h2 class="section-title">Gaminiai</h2>
+    <p class="section-subtitle">Susipažinkite su mūsų populiariausiais gaminiais</p>
 
     <div class="services-grid">
 
       <div class="service-card">
-        <img src="nuotraukos/roletas34.png">
+        <div class="img-wrap">
+          <img src="nuotraukos/roletas34.png">
+        </div>
         <div class="text">
           <h3>Roletai diena-naktis</h3>
-          <p>Kontroliuokite šviesą ir sukurkite jaukumą.</p>
+          <p>Kontroliuokite šviesą ir kurkite jaukumą.</p>
         </div>
       </div>
 
       <div class="service-card">
-        <img src="nuotraukos/roletas27.png">
+        <div class="img-wrap">
+          <img src="nuotraukos/roletas27.png">
+        </div>
         <div class="text">
           <h3>Klasikiniai roletai</h3>
-          <p>Stilingas ir funkcionalus pasirinkimas.</p>
+          <p>Patogumas ir estetika Jūsų namams.</p>
         </div>
       </div>
 
       <div class="service-card">
-        <img src="nuotraukos/roletas09.png">
+        <div class="img-wrap">
+          <img src="nuotraukos/roletas09.png">
+        </div>
         <div class="text">
-          <h3>Žaliuzės</h3>
+          <h3>Horizontalios žaliuzės</h3>
           <p>Puikus šviesos valdymas.</p>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <h2 class="section-title">Atlikti darbai</h2>
+
+    <div class="gallery-grid">
+      <div class="img-wrap"><img src="nuotraukos/roletas10.png"></div>
+      <div class="img-wrap"><img src="nuotraukos/roletas23.png"></div>
+      <div class="img-wrap"><img src="nuotraukos/roletas25.png"></div>
+      <div class="img-wrap"><img src="nuotraukos/roletas29.png"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title">Apie mus</h2>
+
+    <div class="about-grid">
+      <div>
+        <h3>Greitas darbas</h3>
+        <p>Iki 2 savaičių nuo užsakymo iki montavimo.</p>
+      </div>
+
+      <div>
+        <h3>Nemokamas matavimas</h3>
+        <p>Atvykstame Jums patogiu metu.</p>
+      </div>
+
+      <div>
+        <h3>Pristatymas</h3>
+        <p>Siunčiame visoje Lietuvoje.</p>
+      </div>
     </div>
   </div>
 </section>
