@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Roletai Online</title>
-  <meta name="description" content="Kokybiški roletai ir žaliuzės">
+<title>Roletai Online</title>
 
-  <!-- FONTAI -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="nav-left">
-      <a href="#" class="nav-logo">Roletai online</a>
-    </div>
+    <div class="nav-logo">Roletai online</div>
 
     <div class="nav-links">
       <a href="#services">Gaminiai</a>
-      <a href="#gallery">Atlikti darbai</a>
+      <a href="#gallery">Galerija</a>
       <a href="#about">Apie mus</a>
-      <a href="#contact">Susisiekite</a>
+      <a href="#contact">Kontaktai</a>
     </div>
 
-    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
   </div>
 
-  <div class="nav-mobile" id="mobile-menu">
+  <div class="nav-mobile" id="mobileMenu">
     <a href="#services">Gaminiai</a>
-    <a href="#gallery">Atlikti darbai</a>
+    <a href="#gallery">Galerija</a>
     <a href="#about">Apie mus</a>
-    <a href="#contact">Susisiekite</a>
+    <a href="#contact">Kontaktai</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <img class="hero-bg" src="nuotraukos/roletas27.png" alt="">
-  <div class="hero-overlay"></div>
+  <img src="nuotraukos/roletas27.png" class="hero-bg">
+  <div class="overlay"></div>
 
   <div class="hero-content">
     <h1>Roletai online</h1>
@@ -53,105 +48,90 @@
 </section>
 
 <!-- SERVICES -->
-<section class="section" id="services">
-  <div class="container">
-    <h2 class="section-title">Gaminiai</h2>
-    <p class="section-subtitle">Susipažinkite su mūsų populiariausiais gaminiais</p>
+<section id="services" class="section">
+  <h2>Gaminiai</h2>
+  <p class="sub">Populiariausi mūsų gaminiai</p>
 
-    <div class="services-grid">
+  <div class="services">
+    <div class="card">
+      <img src="nuotraukos/roletas34.png">
+      <h3>Diena-naktis</h3>
+      <p>Šviesos kontrolė ir jaukumas.</p>
+    </div>
 
-      <div class="service-card">
-        <div class="img-wrap">
-          <img src="nuotraukos/roletas34.png">
-        </div>
-        <div class="text">
-          <h3>Roletai diena-naktis</h3>
-          <p>Kontroliuokite šviesą ir kurkite jaukumą.</p>
-        </div>
-      </div>
+    <div class="card">
+      <img src="nuotraukos/roletas27.png">
+      <h3>Klasikiniai</h3>
+      <p>Patogumas ir estetika.</p>
+    </div>
 
-      <div class="service-card">
-        <div class="img-wrap">
-          <img src="nuotraukos/roletas27.png">
-        </div>
-        <div class="text">
-          <h3>Klasikiniai roletai</h3>
-          <p>Patogumas ir estetika Jūsų namams.</p>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <div class="img-wrap">
-          <img src="nuotraukos/roletas09.png">
-        </div>
-        <div class="text">
-          <h3>Horizontalios žaliuzės</h3>
-          <p>Puikus šviesos valdymas.</p>
-        </div>
-      </div>
-
+    <div class="card">
+      <img src="nuotraukos/roletas09.png">
+      <h3>Žaliuzės</h3>
+      <p>Puikus šviesos valdymas.</p>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
-<section class="section section-alt" id="gallery">
-  <div class="container">
-    <h2 class="section-title">Atlikti darbai</h2>
+<section id="gallery" class="section alt">
+  <h2>Galerija</h2>
 
-    <div class="gallery-grid">
-      <div class="img-wrap"><img src="nuotraukos/roletas10.png"></div>
-      <div class="img-wrap"><img src="nuotraukos/roletas23.png"></div>
-      <div class="img-wrap"><img src="nuotraukos/roletas25.png"></div>
-      <div class="img-wrap"><img src="nuotraukos/roletas29.png"></div>
-    </div>
+  <div class="gallery">
+    <img src="nuotraukos/roletas10.png">
+    <img src="nuotraukos/roletas23.png">
+    <img src="nuotraukos/roletas25.png">
+    <img src="nuotraukos/roletas29.png">
+    <img src="nuotraukos/roletas33.png">
+    <img src="nuotraukos/roletas37.png">
+    <img src="nuotraukos/roletas15.png">
+    <img src="nuotraukos/roletas34.png">
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section" id="about">
-  <div class="container">
-    <h2 class="section-title">Apie mus</h2>
+<section id="about" class="section">
+  <h2>Apie mus</h2>
 
-    <div class="about-grid">
-      <div>
-        <h3>Greitas darbas</h3>
-        <p>Iki 2 savaičių nuo užsakymo iki montavimo.</p>
-      </div>
+  <div class="about">
+    <div>
+      <div class="icon">⏱</div>
+      <h3>Greitai</h3>
+      <p>Iki 2 savaičių</p>
+    </div>
 
-      <div>
-        <h3>Nemokamas matavimas</h3>
-        <p>Atvykstame Jums patogiu metu.</p>
-      </div>
+    <div>
+      <div class="icon">📍</div>
+      <h3>Nemokamai</h3>
+      <p>Atvykimas ir matavimas</p>
+    </div>
 
-      <div>
-        <h3>Pristatymas</h3>
-        <p>Siunčiame visoje Lietuvoje.</p>
-      </div>
+    <div>
+      <div class="icon">🚚</div>
+      <h3>Visoje Lietuvoje</h3>
+      <p>Pristatome visur</p>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section section-alt" id="contact">
-  <div class="container">
-    <h2 class="section-title">Susisiekite</h2>
+<section id="contact" class="section alt">
+  <h2>Kontaktai</h2>
 
-    <form class="contact-form">
-      <input type="email" placeholder="El. paštas" required>
-      <textarea placeholder="Žinutė" required></textarea>
-      <button type="submit">Siųsti</button>
-    </form>
-  </div>
+  <form class="contact">
+    <input type="email" placeholder="El. paštas">
+    <textarea placeholder="Žinutė"></textarea>
+    <button>Siųsti</button>
+  </form>
 </section>
 
 <footer>
-  <p>© 2025 Roletai online</p>
+  © 2025 Roletai online
 </footer>
 
 <script>
 function toggleMenu(){
-  document.getElementById("mobile-menu").classList.toggle("open");
+  document.getElementById("mobileMenu").classList.toggle("open");
 }
 </script>
 
