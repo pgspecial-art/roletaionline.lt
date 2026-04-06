@@ -14,7 +14,22 @@
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
 html { scroll-behavior:smooth; }
 body { background:#f9f7f5; color:#2e2518; }
+  
+.nav-left{
+  display:flex;
+  align-items:center;
+  gap:10px; /
+}
 
+.fb-icon{
+  width:20px;   
+  height:20px;
+  transition: transform 0.2s;
+}
+
+.fb-icon:hover{
+  transform: scale(1.1); 
+}
 /* NAVIGATION */
 nav { position:fixed; top:0; left:0; right:0; background:rgba(46,37,24,0.9); backdrop-filter:blur(8px); z-index:100; }
 .nav-inner { max-width:1200px; margin:0 auto; padding:0 20px; height:64px; display:flex; align-items:center; justify-content:space-between; }
@@ -82,22 +97,25 @@ footer { background:#2e2518; color:rgba(249,247,245,0.5); text-align:center; pad
 <body>
 
 <!-- NAVIGATION -->
-<nav>
+<nav class="navbar">
   <div class="nav-inner">
-    <a href="#" class="nav-logo">Roletai Online</a>
-    <div class="nav-links">
-      <a href="#services">Gaminiai</a>
-      <a href="#gallery">Atlikti darbai</a>
-      <a href="#about">Apie mus</a>
-      <a href="#contact">Susisiekite</a>
+    <div class="nav-left">
+      <!-- Facebook ikona prie logotipo -->
+      <a href="https://www.facebook.com/roletai.jonava.7" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" class="fb-icon" alt="Facebook">
+      </a>
+      <a href="#" class="nav-logo">Roletai online</a>
     </div>
-    <button class="nav-toggle" onclick="document.getElementById('mobile-menu').classList.toggle('open')">☰</button>
-  </div>
-  <div class="nav-mobile" id="mobile-menu">
-    <a href="#services" onclick="this.parentElement.classList.remove('open')">Gaminiai</a>
-    <a href="#gallery" onclick="this.parentElement.classList.remove('open')">Atlikti darbai</a>
-    <a href="#about" onclick="this.parentElement.classList.remove('open')">Apie mus</a>
-    <a href="#contact" onclick="this.parentElement.classList.remove('open')">Susisiekite</a>
+
+    <input type="checkbox" id="menu-toggler">
+    <label for="menu-toggler" class="nav-toggle">☰</label>
+
+    <ul class="nav-links">
+      <li><a href="#services">Gaminiai</a></li>
+      <li><a href="#portfolio">Atlikti darbai</a></li>
+      <li><a href="#about">Apie mus</a></li>
+      <li><a href="#contact">Susisiekite</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -207,8 +225,8 @@ footer { background:#2e2518; color:rgba(249,247,245,0.5); text-align:center; pad
     </div>
     <div>
       <div class="about-icon">🚚</div>
-      <h3>Pristatymas visoje Lietuvoje</h3>
-      <p>Galite sumontuoti patys arba mes pristatome.</p>
+      <h3>Norite susimontuoti juos patys?</h3>
+      <p>Puiku, gaminius siunčiame visoje Lietuvoje.</p>
     </div>
   </div>
 </section>
@@ -225,7 +243,7 @@ footer { background:#2e2518; color:rgba(249,247,245,0.5); text-align:center; pad
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Roletai Online. Visos teisės saugomos.</p>
+  <p>© 2026 Roletai Online. Visos nuotraukos bei teisės priklauso svetainės kūrėjui.</p>
 </footer>
 
 <!-- JS -->
